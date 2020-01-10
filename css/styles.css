@@ -226,13 +226,6 @@ button#chat:hover {
     background-color: #6400ff;
 }
 
-button#chat:before {
-    font-family: 'FontAwesome';
-    content: '\f086';
-    position: absolute;
-    left: 32%;
-}
-
 footer {
     margin-top: 6%;
     margin-bottom: 20px;
