@@ -40,8 +40,6 @@ nav {
 }
 
 nav button {
-    margin-right: 2px;
-    margin-left: 2px;
     height: 48px;
     width: 196px;
     font-family: sans-serif;
@@ -56,7 +54,6 @@ nav button:hover {
 div.image {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 192px;
     width: 1000px;
     display: flex;
 }
