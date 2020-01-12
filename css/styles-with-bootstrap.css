@@ -104,20 +104,12 @@ span i.fab {
 section {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 453px;
     width: 1000px;
-    display: flex;
-}
-
-section .column{
-    width: 200px;
-    height: 453px;
     display: flex;
 }
 
 section .column > ul {
     list-style-type: none;
-    width: 175px;
 }
 
 section .column > ul li {
@@ -126,11 +118,11 @@ section .column > ul li {
     padding: 10px;
     color: blue;
     margin-left: -36px;
+    text-align: center;
 }
 
 section .article {
     width: 600px;
-    height: 453px;
 }
 
 section .article h1,h2,h3,h4,h5 {
@@ -156,10 +148,16 @@ section .article p {
     margin-left: 0px;
 }
 
+section .text-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
 section #header {
     color: #fff;
     background-color: #6400ff;
-    width: 200px;
+    width: 100%;
     height: 50px;
     margin-bottom: 5px;
     font-size: 26px;
@@ -167,14 +165,8 @@ section #header {
     font-weight: bold;
 }
 
-section .text-container {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-
 section > form {
-    width: 176px;
+    /* width: 176px; */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -184,7 +176,7 @@ section > form {
 section > form * {
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 196px;
+    width: 100%;
 }
 
 section > form input {
@@ -234,4 +226,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    section > form button {
+        width: 40%;
+        height: 20%;
+    }
 }
