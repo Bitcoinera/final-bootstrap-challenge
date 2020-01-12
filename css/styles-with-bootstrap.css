@@ -234,3 +234,19 @@ footer {
         height: 20%;
     }
 }
+
+@media (max-width: 576px) {
+    button#chat {        
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    button#chat i {
+        font-size: 25px;
+    }
+
+    button#chat .toBeHidden {
+        display: none;
+    }
+}
