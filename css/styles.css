@@ -34,14 +34,11 @@ header i {
 nav {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 48px;
     width: 1000px;
     display: flex;
 }
 
 nav button {
-    margin-right: 2px;
-    margin-left: 2px;
     height: 48px;
     width: 196px;
     font-family: sans-serif;
@@ -56,7 +53,6 @@ nav button:hover {
 div.image {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 192px;
     width: 1000px;
     display: flex;
 }
@@ -65,6 +61,7 @@ div.image img {
     height: 100px;
     width: 100px;
     border-radius: 100%;
+    margin: 0 auto;
 }
 
 div.image h1,h2,h3,h4,h5 {
@@ -77,11 +74,6 @@ div.flex-image > * {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-div.flex-image > img {
-    position: relative;
-    left: 40%;
 }
 
 span.fa-stack {
@@ -108,33 +100,22 @@ span i.fab {
 section {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 453px;
     width: 1000px;
-    display: flex;
-}
-
-section .column{
-    width: 200px;
-    height: 453px;
     display: flex;
 }
 
 section .column > ul {
     list-style-type: none;
-    width: 175px;
 }
 
 section .column > ul li {
-    background-color: #aaa;
-    margin: 10px 2px 10px 2px;
+    background-color: #988c8c;
+    margin: 2px 2px 0px 2px;
     padding: 10px;
-    color: blue;
+    color: white;
     margin-left: -36px;
-}
-
-section .article {
-    width: 600px;
-    height: 453px;
+    text-align: center;
+    height: 38px;
 }
 
 section .article h1,h2,h3,h4,h5 {
@@ -160,10 +141,16 @@ section .article p {
     margin-left: 0px;
 }
 
+section .text-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
 section #header {
     color: #fff;
     background-color: #6400ff;
-    width: 200px;
+    width: 100%;
     height: 50px;
     margin-bottom: 5px;
     font-size: 26px;
@@ -171,14 +158,8 @@ section #header {
     font-weight: bold;
 }
 
-section .text-container {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-
 section > form {
-    width: 176px;
+    /* width: 176px; */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -188,7 +169,7 @@ section > form {
 section > form * {
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 196px;
+    width: 100%;
 }
 
 section > form input {
@@ -238,4 +219,27 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 992px) {
+    section > form button {
+        width: 40%;
+        height: 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    button#chat {        
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    button#chat i {
+        font-size: 25px;
+    }
+
+    button#chat .toBeHidden {
+        display: none;
+    }
 }
