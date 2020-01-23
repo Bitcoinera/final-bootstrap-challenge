@@ -12,7 +12,6 @@ body {
 header {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 1000px;
     height: 120px;
     display: flex;
     justify-content: space-between;
@@ -20,7 +19,6 @@ header {
 }
 
 header #logo {
-    width: 200px;
     height: 60px;
     font-size: 50px;
     font-family: 'KausanScript-Regular';
@@ -34,13 +32,11 @@ header i {
 nav {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 1000px;
     display: flex;
 }
 
 nav button {
     height: 48px;
-    width: 196px;
     font-family: sans-serif;
     color: white;
     background-color: #6400ff;
@@ -53,7 +49,6 @@ nav button:hover {
 div.image {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 1000px;
     display: flex;
 }
 
@@ -100,7 +95,6 @@ span i.fab {
 section {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 1000px;
     display: flex;
 }
 
@@ -125,7 +119,6 @@ section .article h1,h2,h3,h4,h5 {
 }
 
 section .article img {
-    width: 300px;
     height: 200px;
     margin-right: 10px;
     float: left;
@@ -159,7 +152,7 @@ section #header {
 }
 
 section > form {
-    /* width: 176px; */
+    width: 176px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -179,7 +172,6 @@ section > form input {
 
 section > form button {
     background-color: #64006480;
-    width: 95px;
     height: 33px;
 }
 
@@ -211,7 +203,6 @@ button#chat:hover {
 footer {
     margin-top: 6%;
     margin-bottom: 20px;
-    width: 1000px;
     height: 70px;
     font-family: sans-serif;
     background-color: #6400ff;
